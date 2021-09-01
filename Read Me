@@ -1,0 +1,23 @@
+Docker Application Deployment
+Step 1: INSTALL DOCKER ON YOUR MACHINES
+Docker makes it easy to run applications anywhere, but those places need to have docker running. There are three main Docker variants, depending on how the type of environment you are setting up on:
+1.	Docker Enterprise Edition (Docker EE)
+2.	Docker Community Edition (Docker CE)
+3.	Docker Cloud
+
+Step 2: SET UP A REGISTRY AT DOCKER HUB
+In order to easily distribute your applications, you‘ll need somewhere to share them.
+Docker Hub is like the GitHub of Docker Containers. There are thousands of apps and examples you can use. To set up your own public or private repository to start deploying your apps, just go to the Docker Hub website.
+You can use the Docker hub to push and pull changes of your app to different machines.
+
+Step 3: SET UP YOUR DOCKERIZED MACHINES
+The next step is to get your Docker environment ready to run your app. You do this by using the command line and a few different tools.
+These virtual machines are the ones responsible for setting up the Containers we have talked about. There are other really cool things you can do too, like setting up multiple instances of your app and use a load balancer to automatically send traffic to different versions across a cloud server.
+
+Step 4: CREATE A DOCKER IMAGE
+Docker Containers are created from Docker Images. To get your app distributed to different machines, you‘ll need to create a Docker Image to send to them. This is done using a Dockerfile
+A Dockerfile is usually around 3-30 lines long and contains all the commands needed to create your Docker Image. There are infinite ways to set up you Dockerfile, it‘s best to know docker deployment best practices before you set it up.
+Once you‘ve prepared your Dockerfile, you can use the build command line tool to create an image.
+
+Step 5: DEPLOY YOUR APPLICATION ON DOCKER
+Push your application to your repository. The docker push command is useful.
